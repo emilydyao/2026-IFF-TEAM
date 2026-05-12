@@ -1,0 +1,19 @@
+; GENERATED WITH auto_Martini v0.2.1 for PHE
+; Developed by: Kiran Kanekal, Tristan Bereau, and Andrew Abi-Mansour
+
+[moleculetype]
+; molname       nrexcl
+  PHE           2
+
+[atoms]
+; id    type    resnr   residue  atom    cgnr    charge  smiles
+    1     SC5     1     PHE       S01     1         0   ; [H]OC([H])([H])C([H])([H])c1c([H])c([H])c([H])c([H])c1[H]
+    2     SC5     1     PHE       S02     2         0   ; [H]c1cc([H])c([H])c([H])c1[H]
+    3     SC5     1     PHE       S03     3         0   ; [H]c1cc([H])c([H])c([H])c1[H]
+
+
+[constraints]
+;  i   j     funct   length
+   1   2     1       0.24
+   1   3     1       0.24
+   2   3     1       0.24

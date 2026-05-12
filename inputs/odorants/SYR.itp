@@ -1,0 +1,16 @@
+[ moleculetype ]
+; name  nrexcl
+SYR     1
+
+[ atoms ]
+; id  type  resnr  resid  atom  cgnr  charge
+1     SC4     1     SYR    B1    1     0.0
+2     SC4     1     SYR    B2    2     0.0
+3     P1      1     SYR    B3    3     0.0
+4     P1      1     SYR    B4    4     0.0
+
+[ bonds ]
+; i  j  funct  length  force.c.
+1   2   1      0.27    1250
+2   3   1      0.27    1250
+2   4   1      0.27    1250

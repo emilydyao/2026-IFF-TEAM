@@ -1,0 +1,11 @@
+; GENERATED WITH auto_Martini v0.2.1 for DMS
+; Developed by: Kiran Kanekal, Tristan Bereau, and Andrew Abi-Mansour
+
+[moleculetype]
+; molname       nrexcl
+  DMS           2
+
+[atoms]
+; id    type    resnr   residue  atom    cgnr    charge  smiles
+    1     N0      1     DMS       N01     1         0   ; [H]C([H])([H])SC([H])([H])[H]
+

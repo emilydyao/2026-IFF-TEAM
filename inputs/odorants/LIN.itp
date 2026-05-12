@@ -1,0 +1,22 @@
+; GENERATED WITH auto_Martini v0.2.1 for LIN
+; Developed by: Kiran Kanekal, Tristan Bereau, and Andrew Abi-Mansour
+
+[moleculetype]
+; molname       nrexcl
+  LIN           2
+
+[atoms]
+; id    type    resnr   residue  atom    cgnr    charge  smiles
+    1     Nda     1     LIN       N01     1         0   ; [H]OC(C([H])=C([H])[H])C([H])([H])[H]
+    2     C5      1     LIN       C01     2         0   ; [H]C([H])C([H])[H]
+    3     C4      1     LIN       C02     3         0   ; [H]C=C(C([H])([H])[H])C([H])([H])[H]
+
+[bonds]
+; i j     funct     length    force.c.
+  1 2       1         0.26     1250
+  2 3       1         0.26     1250
+
+[angles]
+; i j k         funct   angle   force.c.
+  1 2 3         2       138.1   25.0
+

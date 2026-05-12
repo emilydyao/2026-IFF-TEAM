@@ -1,0 +1,17 @@
+*.xtc
+*.trr
+*.edr
+*.cpt
+*.tpr
+
+# Large result movies
+results/movies/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Editor/system junk
+*~
+.DS_Store

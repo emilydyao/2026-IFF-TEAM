@@ -1,0 +1,66 @@
+; Production Run, 200 ns
+title                    = Production
+
+; RUN CONTROL PARAMETERS
+integrator               = md
+tinit                    = 0            ; Start time in ps
+dt                       = 0.020        ; Timestep in ps (20 fs — standard MARTINI)
+nsteps                   = 10000000     ; 200 ns
+init_step                = 0
+comm-mode                = Linear       ; Center of mass motion removal
+nstcomm                  = 100
+comm-grps                = TMEA BMEA GRA ODO W WF  ; all non-frozen groups
+
+; OUTPUT CONTROL OPTIONS
+
+nstxout                  = 0
+nstvout                  = 0
+nstfout                  = 0
+nstlog                   = 5000
+nstenergy                = 5000
+nstxout-compressed       = 5000        
+compressed-x-precision   = 1000        
+
+; FREEZE GRAPHENE
+freezegrps               = GRA
+freezedim                = Y Y Y
+
+; NEIGHBORSEARCHING PARAMETERS
+cutoff-scheme            = Verlet
+nstlist                  = 20           
+pbc                      = xyz
+periodic-molecules       = yes
+rlist                    = 1.2
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+coulombtype              = reaction-field
+rcoulomb                 = 1.2
+epsilon-r                = 2.5          ; relative dielectric constant (MARTINI)
+epsilon-rf               = 0            
+rcoulomb-switch          = 0
+
+vdw-type                 = cutoff
+vdw-modifier             = Force-switch 
+rvdw-switch              = 0.9
+rvdw                     = 1.2
+DispCorr                 = No
+
+; TEMPERATURE COUPLING
+tcoupl                   = v-rescale
+tc-grps                  = TMEA BMEA GRA
+tau-t                    = 1.0  1.0  1.0
+ref_t                    = 298   298   298
+
+; GENERATE VELOCITIES FOR STARTUP RUN
+gen_vel                  = no
+gen-temp                 = 298
+gen-seed                 = -1
+
+; OPTIONS FOR BONDS
+constraints              = none
+constraint-algorithm     = Lincs
+continuation             = yes
+lincs-order              = 4
+lincs-iter               = 1
+lincs-warnangle          = 30
+morse                    = no

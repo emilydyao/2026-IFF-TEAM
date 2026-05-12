@@ -1,0 +1,81 @@
+[ moleculetype ]
+; name   nrexcl
+  DMS      2
+
+[ atoms ]
+; nr  type  resnr  residu  atom  cgnr  charge  mass
+  1    C2     1     DMS    S01    1       0.00    72.0
+
+[ moleculetype ]
+; name   nrexcl
+  LIN      2
+
+[ atoms ]
+; nr  type  resnr  residu  atom  cgnr  charge  mass
+  1    P1     1     LIN    C1A    1       0.00    72.0
+  2    C2     1     LIN    C2A    2       0.00    72.0
+  3    C1     1     LIN    C3A    3       0.00    72.0
+  4    C1     1     LIN    C4A    4       0.00    72.0
+  5    C1     1     LIN    C5A    5       0.00    72.0
+
+[ bonds ]
+; i  j  funct  r0(nm)  kb(kJ/mol/nm²)
+  1  3  1      0.47    3800.0
+  2  3  1      0.47    3800.0
+  3  4  1      0.47    3800.0
+  4  5  1      0.47    3800.0
+
+[ angles ]
+; i  j  k  funct  theta0  ktheta
+  1  3  4  2      120.0   25.0
+  2  3  4  2      120.0   25.0
+  3  4  5  2      180.0   25.0
+
+[ moleculetype ]
+; name   nrexcl
+  PHE      2
+
+[ atoms ]
+; nr  type  resnr  residu  atom  cgnr  charge  mass
+  1    P1     1     PHE    C1A    1       0.00    72.0
+  2    C1     1     PHE    C2A    2       0.00    72.0
+  3    SC4    1     PHE    R1A    3       0.00    45.0
+  4    SC4    1     PHE    R2A    4       0.00    45.0
+
+[ bonds ]
+; i  j  funct  r0(nm)  kb(kJ/mol/nm²)
+  1  3  1      0.43    3800.0
+  2  3  1      0.43    3800.0
+  3  4  1      0.43    3800.0
+
+[ angles ]
+; i  j  k  funct  theta0  ktheta
+  1  3  4  2      120.0   35.0
+  2  3  4  2      120.0   35.0
+
+
+[ moleculetype ]
+; name   nrexcl
+  SYR      2
+
+[ atoms ]
+; nr  type  resnr  residu  atom  cgnr  charge  mass
+  1    P1     1     SYR    O1A    1       0.00    72.0
+  2    P2     1     SYR    O2A    2       0.00    72.0
+  3    SC4    1     SYR    R1A    3       0.00    45.0
+  4    SC4    1     SYR    R2A    4       0.00    45.0
+  5    P2     1     SYR    C1A    5       0.00    72.0
+
+[ bonds ]
+; i  j  funct  r0(nm)  kb(kJ/mol/nm²)
+  1  3  1      0.43    3800.0
+  2  3  1      0.43    3800.0
+  3  4  1      0.43    3800.0
+  4  5  1      0.47    3800.0
+
+[ angles ]
+; i  j  k  funct  theta0  ktheta
+  1  3  4  2      120.0   35.0
+  2  3  4  2      120.0   35.0
+  3  4  5  2      120.0   35.0
+
